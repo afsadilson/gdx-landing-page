@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://gamedex.app/</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gamedex.app/#/en"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gamedex.app/#/pt"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gamedex.app/#/pt"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gamedex.app/#/es"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gamedex.app/#/it"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gamedex.app/#/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gamedex.app/#/de"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://gamedex.app/#/ja"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gamedex.app/"/>
+  </url>
+
+  <url>
+    <loc>https://gamedex.com.br/</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://gamedex.com.br/#/pt"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://gamedex.com.br/#/pt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gamedex.app/"/>
+  </url>
+
+</urlset>

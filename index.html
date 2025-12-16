@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamedex - Your Game Collection Manager</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Gamedex - Your Game Collection Manager | Track, Organize, Discover Games">
+    <meta name="description" content="Gamedex is the ultimate free game collection manager for iOS and Android. Track games across PC, PlayStation, Xbox, Nintendo, and Mobile. Organize your owned, wishlist, and beaten games in one place. Join 1,000+ gamers today.">
+    <meta name="keywords" content="game collection, game tracker, video game manager, game library, gaming app, backlog tracker">
+    <meta name="author" content="Gamedex">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gamedex.app/">
+
+    <!-- Hreflang Tags for Multi-language -->
+    <link rel="alternate" hreflang="en" href="https://gamedex.app/#/en">
+    <link rel="alternate" hreflang="pt" href="https://gamedex.app/#/pt">
+    <link rel="alternate" hreflang="pt-BR" href="https://gamedex.app/#/pt">
+    <link rel="alternate" hreflang="es" href="https://gamedex.app/#/es">
+    <link rel="alternate" hreflang="it" href="https://gamedex.app/#/it">
+    <link rel="alternate" hreflang="fr" href="https://gamedex.app/#/fr">
+    <link rel="alternate" hreflang="de" href="https://gamedex.app/#/de">
+    <link rel="alternate" hreflang="ja" href="https://gamedex.app/#/ja">
+    <link rel="alternate" hreflang="x-default" href="https://gamedex.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gamedex.app/">
+    <meta property="og:title" content="Gamedex - Your Game Collection Manager">
+    <meta property="og:description" content="Track games across all platforms. Organize your collection into owned, wishlist, and beaten. 100% Free. No Ads. Join 1,000+ gamers.">
+    <meta property="og:image" content="https://gamedex.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Gamedex App - Game Collection Manager Interface">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:site_name" content="Gamedex">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gamedex.app/">
+    <meta name="twitter:title" content="Gamedex - Your Game Collection Manager">
+    <meta name="twitter:description" content="Track games across all platforms. Organize your collection. 100% Free. No Ads.">
+    <meta name="twitter:image" content="https://gamedex.app/twitter-card.png">
+    <meta name="twitter:image:alt" content="Gamedex App Interface">
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="/gdx-landing-page/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/gdx-landing-page/site.webmanifest">
+    <meta name="theme-color" content="#ef4444">
+    <meta name="msapplication-TileColor" content="#ef4444">
+
+    <!-- iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Gamedex">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fef2f2',
+                100: '#fee2e2',
+                200: '#fecaca',
+                300: '#fca5a5',
+                400: '#f87171',
+                500: '#ef4444',
+                600: '#dc2626',
+                700: '#b91c1c',
+                800: '#991b1b',
+                900: '#7f1d1d',
+                950: '#450a0a',
+              },
+              accent: {
+                500: '#f59e0b',
+                400: '#fbbf24',
+              }
+            },
+            animation: {
+              blob: "blob 7s infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+                "33%": {
+                  transform: "translate(30px, -50px) scale(1.1)",
+                },
+                "66%": {
+                  transform: "translate(-20px, 20px) scale(0.9)",
+                },
+                "100%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Base styles handled by Tailwind classes in App.tsx now for theming */
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a3a3a3;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #404040;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #737373;
+      }
+      
+      /* Animation delays */
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+    </style>
+
+
+<!-- Structured Data - JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gamedex",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": ["iOS", "Android"],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Gamedex",
+    "url": "https://gamedex.app"
+  },
+  "description": "Gamedex is the ultimate game collection manager for iOS and Android. Track games across PC, PlayStation, Xbox, Nintendo, and Mobile. Organize your owned, wishlist, and beaten games in one place.",
+  "screenshot": "https://gamedex.app/assets/dashboard_screen.png",
+  "softwareVersion": "2.0",
+  "datePublished": "2024-01-01",
+  "dateModified": "2025-12-16",
+  "downloadUrl": [
+    "https://apps.apple.com/app/gamedex/id1644161325",
+    "https://play.google.com/store/apps/details?id=com.gamedex"
+  ],
+  "featureList": [
+    "Universal game tracking across all platforms",
+    "Smart discovery with powerful search",
+    "Collection management (Own, Wishlist, Beat)",
+    "Statistics and gaming insights",
+    "Multi-platform support: PC, PlayStation, Xbox, Nintendo, Mobile",
+    "Free with no advertisements"
+  ],
+  "inLanguage": ["en", "pt", "es", "it", "fr", "de", "ja"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gamedex",
+  "url": "https://gamedex.app",
+  "logo": "https://gamedex.app/apple-touch-icon.png",
+  "sameAs": [
+    "https://apps.apple.com/app/gamedex/id1644161325",
+    "https://play.google.com/store/apps/details?id=com.gamedex"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "availableLanguage": ["English", "Portuguese", "Spanish", "Italian", "French", "German", "Japanese"]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Gamedex",
+  "url": "https://gamedex.app",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gamedex.app/#/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-icons/io5": "https://esm.sh/react-icons@5.4.0/io5?external=react",
+    "react-icons/": "https://esm.sh/react-icons@^5.5.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/gdx-landing-page/assets/index-zSt7__sh.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>

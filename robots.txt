@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gamedex.app/sitemap.xml
+Sitemap: https://gamedex.com.br/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
