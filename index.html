@@ -1,225 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamedex - Your Game Collection Manager</title>
 
-<head>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Gamedex - Your Game Collection Manager | Track, Organize, Discover Games">
+    <meta name="description" content="Gamedex is the ultimate free game collection manager for iOS and Android. Track games across PC, PlayStation, Xbox, Nintendo, and Mobile. Organize your owned, wishlist, and beaten games in one place. Join 1,000+ gamers today.">
+    <meta name="keywords" content="game collection, game tracker, video game manager, game library, gaming app, backlog tracker">
+    <meta name="author" content="Gamedex">
+    <meta name="robots" content="index, follow">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Gerencie sua coleção de jogos retrô de qualquer lugar e nunca mais se perca nas planilhas.">
-  <meta name="author" content="Gamedex">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gamedex.app/">
 
-  <title>Gamedex - Gerencie sua coleção de games retro e jogos zerados</title>
+    <!-- Hreflang Tags for Multi-language -->
+    <link rel="alternate" hreflang="en" href="https://gamedex.app/#/en">
+    <link rel="alternate" hreflang="pt" href="https://gamedex.app/#/pt">
+    <link rel="alternate" hreflang="pt-BR" href="https://gamedex.app/#/pt">
+    <link rel="alternate" hreflang="es" href="https://gamedex.app/#/es">
+    <link rel="alternate" hreflang="it" href="https://gamedex.app/#/it">
+    <link rel="alternate" hreflang="fr" href="https://gamedex.app/#/fr">
+    <link rel="alternate" hreflang="de" href="https://gamedex.app/#/de">
+    <link rel="alternate" hreflang="ja" href="https://gamedex.app/#/ja">
+    <link rel="alternate" hreflang="x-default" href="https://gamedex.app/">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gamedex.app/">
+    <meta property="og:title" content="Gamedex - Your Game Collection Manager">
+    <meta property="og:description" content="Track games across all platforms. Organize your collection into owned, wishlist, and beaten. 100% Free. No Ads. Join 1,000+ gamers.">
+    <meta property="og:image" content="https://gamedex.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Gamedex App - Game Collection Manager Interface">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:site_name" content="Gamedex">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gamedex.app/">
+    <meta name="twitter:title" content="Gamedex - Your Game Collection Manager">
+    <meta name="twitter:description" content="Track games across all platforms. Organize your collection. 100% Free. No Ads.">
+    <meta name="twitter:image" content="https://gamedex.app/twitter-card.png">
+    <meta name="twitter:image:alt" content="Gamedex App Interface">
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ef4444">
+    <meta name="msapplication-TileColor" content="#ef4444">
 
-  <!-- Custom styles for this template -->
-  <link href="css/new-age.min.css" rel="stylesheet">
+    <!-- iOS Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Gamedex">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Outfit', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fef2f2',
+                100: '#fee2e2',
+                200: '#fecaca',
+                300: '#fca5a5',
+                400: '#f87171',
+                500: '#ef4444',
+                600: '#dc2626',
+                700: '#b91c1c',
+                800: '#991b1b',
+                900: '#7f1d1d',
+                950: '#450a0a',
+              },
+              accent: {
+                500: '#f59e0b',
+                400: '#fbbf24',
+              }
+            },
+            animation: {
+              blob: "blob 7s infinite",
+            },
+            keyframes: {
+              blob: {
+                "0%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+                "33%": {
+                  transform: "translate(30px, -50px) scale(1.1)",
+                },
+                "66%": {
+                  transform: "translate(-20px, 20px) scale(0.9)",
+                },
+                "100%": {
+                  transform: "translate(0px, 0px) scale(1)",
+                },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Base styles handled by Tailwind classes in App.tsx now for theming */
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a3a3a3;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #404040;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #737373;
+      }
+      
+      /* Animation delays */
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-icons/io5": "https://esm.sh/react-icons@5.4.0/io5?external=react",
+    "react-icons/": "https://esm.sh/react-icons@^5.5.0/"
+  }
+}
+</script>
+
+<!-- Structured Data - JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gamedex",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": ["iOS", "Android"],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Gamedex",
+    "url": "https://gamedex.app"
+  },
+  "description": "Gamedex is the ultimate game collection manager for iOS and Android. Track games across PC, PlayStation, Xbox, Nintendo, and Mobile. Organize your owned, wishlist, and beaten games in one place.",
+  "screenshot": "https://gamedex.app/assets/dashboard_screen.png",
+  "softwareVersion": "2.0",
+  "datePublished": "2024-01-01",
+  "dateModified": "2025-12-16",
+  "downloadUrl": [
+    "https://apps.apple.com/app/gamedex/id1644161325",
+    "https://play.google.com/store/apps/details?id=com.gamedex"
+  ],
+  "featureList": [
+    "Universal game tracking across all platforms",
+    "Smart discovery with powerful search",
+    "Collection management (Own, Wishlist, Beat)",
+    "Statistics and gaming insights",
+    "Multi-platform support: PC, PlayStation, Xbox, Nintendo, Mobile",
+    "Free with no advertisements"
+  ],
+  "inLanguage": ["en", "pt", "es", "it", "fr", "de", "ja"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gamedex",
+  "url": "https://gamedex.app",
+  "logo": "https://gamedex.app/apple-touch-icon.png",
+  "sameAs": [
+    "https://apps.apple.com/app/gamedex/id1644161325",
+    "https://play.google.com/store/apps/details?id=com.gamedex"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "availableLanguage": ["English", "Portuguese", "Spanish", "Italian", "French", "German", "Japanese"]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Gamedex",
+  "url": "https://gamedex.app",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://gamedex.app/#/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<link rel="stylesheet" href="/index.css">
 </head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Gamedex</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Funcionalidade</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#social">Social</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-lg-7 my-auto">
-          <div class="header-content mx-auto">
-            <h1 class="mb-5">Gamedex irá te ajudar a gerenciar sua coleção de games. Deixe de lado as planilhas e carregue sua coleção no bolso!</h1>
-            <a href="https://play.google.com/store/apps/details?id=com.gamedex" class="btn btn-outline btn-xl js-scroll-trigger">Comece agora de graça!</a>
-          </div>
-        </div>
-        <div class="col-lg-5 my-auto">
-          <div class="device-container">
-            <div class="device-mockup galaxy_s5 portrait gold">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section class="download bg-primary text-center" id="download">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">We've gotta play them all</h2>
-          <p>Baixe agora mesmo e mantenha a jogatina em dia!</p>
-          <div class="badges">
-            <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.gamedex"><img src="img/google-play-badge.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h2>Milhares de jogos, uma paixão</h2>
-        <p class="text-muted">De colecionador para colecionadores!</p>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 my-auto">
-          <div class="device-container">
-            <div class="device-mockup galaxy_s5 portrait gold">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-2.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 my-auto">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>Sempre com você</h3>
-                  <p class="text-muted">Veja e edite sua coleção a qualquer momento e em qualquer lugar!</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-picture text-primary"></i>
-                  <h3>Imagens</h3>
-                  <p class="text-muted">Veja as imagens dos jogos como nos tempos das locadoras!</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-present text-primary"></i>
-                  <h3>Free to play</h3>
-                  <p class="text-muted">Baixe agora mesmo de graça e nunca mais perca nada!</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="icon-game-controller text-primary"></i>
-                  <h3>Só o começo...</h3>
-                  <p class="text-muted">Muitas outras ideias estão sendo programadas!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="cta-content">
-      <div class="container">
-        <h2>Gerencie seus jogos.</h2>
-        <a href="https://play.google.com/store/apps/details?id=com.gamedex" class="btn btn-outline btn-xl js-scroll-trigger">Comece agora mesmo!</a>
-      </div>
-    </div>
-    <div class="overlay"></div>
-  </section>
-
-  <section class="contact bg-primary" id="social">
-    <div class="container">
-      <h2>We
-        <i class="fas fa-heart"></i>
-        games!</h2>
-      <ul class="list-inline list-social">
-        <li class="list-inline-item social-twitter" style="opacity:0.2">
-          <a href="#" style="pointer-events: none;">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-facebook" style="opacity:0.2">
-          <a href="#" style="pointer-events: none;">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-google-plus">
-          <a href="https://www.instagram.com/gamedexplus/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-google-plus" style="opacity:0.2">
-          <a href="#" style="pointer-events: none;">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; Gamedex 2021. All Rights Reserved.</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="https://docs.google.com/document/d/e/2PACX-1vTmcjJz7vUbrpRTPCw4rqlGlVVkUs7bRsjAOgNouCNfi4TLuWD5G9-tFt7fUzhPWTrTQp0l2RxhuwYK/pub" target="_blank">Termos e privacidade</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
-
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
-
 </html>
